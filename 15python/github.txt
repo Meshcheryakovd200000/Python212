@@ -54,6 +54,7 @@ git merge readme
 -совмещает ветки, т.е. master обединяется с веткой readme
 
 git log
+-если показывает END то нажимаем q или w 
 
 win + R => control
 
@@ -64,5 +65,10 @@ git remote add origin https://github.com/Meshcheryakovd200000/Python212.git
 
 git push -u origin master
 
+=======================================
+git add .
+git commit -m "name_commit"
+git push
+=====================================
 
 
