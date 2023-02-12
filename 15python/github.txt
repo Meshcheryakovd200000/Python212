@@ -1,0 +1,68 @@
+git-scm.com/download/win
+
+имя пользователя: Meshcheryakovd200000
+
+
+git --version - версия git
+git --help
+git init - создание репозитория (только один раз)
+git status - состояние репозитория
+
+git add -A или git add . или 
+	 -A, --all - добавляет все файлы которые находятся в папке и подпапках
+	 main.py - добавит main.py
+	. - добавит все файлы из текущей директории
+
+git config --global user.name 'Meshcheryakovd200000' - добавляем имя репозитория
+
+git config --global user.name - проверка имени репозитория
+
+git config --global user.email 'test@mail.ru'
+
+git config --global user.email - проверка email
+
+git commit -m "first commit" -создать точку изменения 
+
+.gitignore -файлы не будут добавляться в репозиторий, которые указаны
+
+git rm -f text1.txt -удалить файл из репозитория
+
+git branch - показывает какие ветки есть
+
+git branch test
+-создать новую ветку
+
+git branch -D test
+-удалить ветку
+
+git branch readme
+-создать новую ветку
+
+git checkout readme
+-перейти на другую ветку "readme"
+
+git checkout -b new
+-создаем ветку и переходим на неё
+
+readme.md
+- служебный файл для документации
+
+master => readme
+		+ readme.md
+
+git merge readme
+-совмещает ветки, т.е. master обединяется с веткой readme
+
+git log
+
+win + R => control
+
+Диспетчер учетных данных - Credential Manager
+https://github.com
+
+git remote add origin https://github.com/Meshcheryakovd200000/Python212.git
+
+git push -u origin master
+
+
+
