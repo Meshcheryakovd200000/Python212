@@ -1,2 +1,2 @@
-#Git and GitHub
+# Git and GitHub
 ## Документ для описания проекта
