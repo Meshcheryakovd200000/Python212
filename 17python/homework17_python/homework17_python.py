@@ -4,11 +4,11 @@ import re
 # 1	Проверка соответствия пароля. Он должен может состоять из цифр, букв английского алфавита,
 # символов дефис, собака и подчеркивание. Длина пароля от 6 до 18 символов.
 #
-# def password(name):
+# def validate_name(name):
 #     return re.findall(r'^[a-z\d@_-]{6,18}$', name, re.IGNORECASE)
 #
 #
-# print(password('my_p@sswOrd'))
+# print(validate_name('my-p@sswOrd'))
 
 # 2	Найти дату в формате: dd/mm/YYYY
 # Тест:
