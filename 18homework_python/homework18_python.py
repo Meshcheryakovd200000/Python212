@@ -1,11 +1,16 @@
 import re
 
 # Задача 1 Валидация номера телефона:
-s = "+7 499 456-45-78, +74994564578, 7 (499) 456 45 78, 7 (499) 456-45-78"
-r = r'\+?7\ ?\(?\d{3}\)?\ ?\d{3}\-?\ ?\d{2}\-?\ ?\d{2}'
+def validate_phone(number):
+    reg = r"^\+?7\s*\(?\d{3}\)?\s*[\d\s-]{7,9}$"
+    return re.search(reg, number).group()
+    # return re.findall(reg, number)[0]
 
 
-print(re.findall(r, s))
+print(validate_phone('+7 499 456-45-78'))
+print(validate_phone('+74994564578'))
+print(validate_phone('7 (499) 456 45 78'))
+print(validate_phone('7 (499) 456-45-78'))
 
 
 # 2 Задачу необходимо решить с использованием рекурсии:
