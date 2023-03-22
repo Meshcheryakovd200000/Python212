@@ -46,8 +46,8 @@ class Clock:
         return Clock(self.sec % other.sec)
 
     def __isub__(self, other):
-        if not isinstance(other, Clock):
-            raise ArithmeticError("Правый операнд должен быть типом Clock")
+        # if not isinstance(other, Clock):
+            # raise ArithmeticError("Правый операнд должен быть типом Clock")
         return Clock(self.sec - other.sec)
 
     def __imul__(self, other):
