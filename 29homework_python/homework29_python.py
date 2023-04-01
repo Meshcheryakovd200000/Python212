@@ -94,9 +94,14 @@ class Triangle(Shape):
         print(
             f"Сторона1: {self.side1}\nСторона2: {self.side2}\nСторона3: {self.side3}\nЦвет: {self.color}\nПлощадь: {object_area}\nПериметр: {perimeter} ")
 
+    # def painting(self):
+    #     for j in range(1, self.side2 * 2, 2):
+    #         print(('*' * j).center(self.side2 * 2))
     def painting(self):
-        for j in range(1, self.side2 * 2, 2):
-            print(('*' * j).center(self.side2 * 2))
+        rows = []
+        for n in range(self.side2):
+            rows.append(" " * n + "*" * (self.side1 - 2 * n))
+        print("\n".join(reversed(rows)))
 
 
 group = [
