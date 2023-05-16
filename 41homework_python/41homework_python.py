@@ -1,4 +1,4 @@
-# Выпадающий список в html странице
+# список в html странице
 
 from jinja2 import Template
 
