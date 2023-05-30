@@ -2,7 +2,7 @@ body {
     background: lightyellow;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  /*чтобы не было засечек*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu {
     display: flex; /*пункты меню горизонтально*/
@@ -71,6 +71,10 @@ body {
 .attributes tr td {
     padding: 3px 5px;
 }
+.attributes tr td:first-child {
+    font-weight: bold;
+    color: #3f3f3f;
+}
 .td {
     display: table-cell;
     vertical-align: inherit;
@@ -86,6 +90,46 @@ body {
     border-spacing: 2px;
 }
 .menu a {
-    font-weight: bold;  /*чтобы меню было жирным цветом*/
+    font-weight: bold; /*чтобы меню было жирным цветом*/
     color: brown;
+}
+/*уберем маркеры списка:*/
+ul{
+    list-style: none;
+    padding: 0; /*убираем отступы элементов списка*/
+}
+/*ссылка для заголовка*/
+p > a {
+    text-decoration: none; /*убираем подчеркивание*/
+    padding: 0;
+}
+/*рамка*/
+li > div {
+    padding: 10px 20px; /*отступ между рамками*/
+}
+/*рамка*/
+li > p, li div {
+    border: 1px solid #CCC;
+}  
+/*фон для элементов ссылки-заголовки*/
+p.title{
+    margin: 0;
+    font-weight: bold;
+    background: gold;
+}
+/*тэг "a" делаем блочным элементом для того чтобы была ссылка всего элемента а*/
+p.title a{
+    display:block;
+    padding: 10px 20px;
+    color: orangered; /*цвет ссылки*/
+}
+/*при наведении элемент выделяется в ораньжевый цвет*/
+p.title:hover{
+    background: orange;
+}
+/*чтобы рамки отделялись*/
+.annonce{
+    margin-top: -1px;
+    margin-bottom: 40px;
+    background: #FFF; /*фон записи статьи белого цвета*/
 }
