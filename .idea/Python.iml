@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/first/password_generator_project" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/first_django/password_generator_project" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/python45homeworkdjango/homework45_django" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/second47/personal_portfolio" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venvAdmin" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (Python) (2)" jdkType="Python SDK" />

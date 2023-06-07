@@ -1,0 +1,1 @@
+D:\Python212\Python\first\password_generator_project\generator\templates\generator\work_rules.html
