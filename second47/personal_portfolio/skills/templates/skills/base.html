@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'skills/favicon.ico' %}">
 </head>
 <body>
+    <!--меню-->
+    {% if user.is_authenticated %}    <!--если пользователь зарегестрирован-->
     <div class="menu">
         <div class="wrap">
             <div class="logo">
@@ -14,11 +17,32 @@
             </div>
             <ul>
                 <!--# список из пункта меню-->
+                <li class="logo">Пользователь: {{ user.username }}</li>
                 <li><a href="{% url 'index' %}">Главная</a></li>
+                <li><a href="{% url 'currenttodos' %}">Актуальные</a></li>
                 <li><a href="{% url 'blogs' %}">Блог</a></li>
+                <li><a href="{% static 'skills/resume.pdf' %}" target="_blank">Резюме</a></li>
+                <li>
+                <form action="{% url 'logoutuser' %}" method="post">
+                    {% csrf_token %}
+                    <button class="top">Выйти</button>
+                </form>
+                </li>
             </ul>
         </div>
     </div>
+
+    {% else %}
+    <div class="menu">
+        <div class="wrap">
+            <ul>
+                <li><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
+                <li><a href="{% url 'loginuser' %}">Войти</a></li>
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+
   <div class="content">
     <div class="wrap">
       {% block content %}

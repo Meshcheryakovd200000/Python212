@@ -22,8 +22,19 @@ from skills import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
     path('blog/', include('blog.urls')),
+
+
+    # Auth
+    path('signup/', views.signupuser, name='signupuser'),  # первый путь для авторизации
+    path('logout/', views.logoutuser, name='logoutuser'),  # первый путь для выхода
+    path('login/', views.loginuser, name='loginuser'),  # первый путь для входа
+
+    # Todos
+    path('', views.index, name='index'),  # когда пользователь нажал на Выход то он переходит на главную страницу
+    path('current/', views.currenttodos, name='currenttodos'),  # текущие задачи
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL,

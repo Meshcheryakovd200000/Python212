@@ -13,28 +13,3 @@ def detail(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)  # если данные существуют то будут попадать в переменную
     # blog, если не существуют то ошибка 404
     return render(request, 'blog/details.html', {'blog': blog})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
