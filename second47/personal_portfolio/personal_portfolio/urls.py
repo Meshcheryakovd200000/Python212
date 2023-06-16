@@ -19,15 +19,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from skills import views
-# from serversetup import views -------------
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', views.index, name='index'),
     path('blog/', include('blog.urls')),
-    # path('serversetup/', views.serversetup, name='serversetup'), ---------
-    path('serversetup/', include('serversetup.urls')),
-    path('development', include('development.urls')),
+
 
     # Auth
     path('signup/', views.signupuser, name='signupuser'),  # первый путь для авторизации
@@ -42,3 +39,18 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL,
                       document_root=settings.MEDIA_ROOT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

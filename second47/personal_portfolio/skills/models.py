@@ -22,5 +22,3 @@ class Todo(models.Model):  # это куда будут сохраняться �
 
     def __str__(self):
         return self.title
-
-
