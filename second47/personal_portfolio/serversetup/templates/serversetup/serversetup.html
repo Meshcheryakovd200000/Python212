@@ -1,0 +1,21 @@
+{% extends 'skills/base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Настройка серверов:</h2>
+
+<div class="block">
+    {% for serversetup in serversetups %}
+    <div class="element">
+        <div class="img49"><img src="{{ serversetup.image.url }}" alt=""></div>
+        <div class="text">
+            <h2><a href="{{ serversetup.url }}" target="_blank">{{ serversetup.title }}</a></h2>
+            <p>{{ serversetup.description }}</p>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+
+{% endblock %}

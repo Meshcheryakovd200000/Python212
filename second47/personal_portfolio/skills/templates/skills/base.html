@@ -19,7 +19,9 @@
                 <!--# список из пункта меню-->
                 <li class="logo">Пользователь: {{ user.username }}</li>
                 <li><a href="{% url 'index' %}">Главная</a></li>
-                <li><a href="{% url 'currenttodos' %}">Актуальные</a></li>
+                <li><a href="{% url 'serversetup' %}">Настр. серверов</a></li>
+                <li><a href="{% url 'development' %}">Разработка </a></li>
+                <!--<li><a href="{% url 'currenttodos' %}">Актуальные</a></li>-->
                 <li><a href="{% url 'blogs' %}">Блог</a></li>
                 <li><a href="{% static 'skills/resume.pdf' %}" target="_blank">Резюме</a></li>
                 <li>

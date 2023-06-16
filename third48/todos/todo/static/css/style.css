@@ -71,10 +71,58 @@ input {
     box-sizing: border-box;
     border-radius: 6px;
 }
-.top { /*кнопка Выйти*/
+.top{ /*кнопка Выйти*/
     padding: 4px 24px;
     margin-top: 0;
     background: transparent; /*убрать фоновый цвет*/
     border: none; /*убираем рамку, тень остается button*/
     color: #FFF; /*цвет белый*/
 }
+
+.content li{ /*currenttodos*/
+    box-shadow: 0 2px 8px 2px #003366;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.content a{ /*currenttodos*/
+    color: #000;
+    display: block;
+    padding: 20px;
+}
+.but{ /*кнопки сохранить, выполнено, удалить*/
+    display: flex;
+    align-items: flex-end;
+}
+.good{
+    background: teal;
+}
+.remove {
+    background: orangered;
+}
+a b{ /*заголовки задач*/
+    color: orangered;
+}
+.left{
+    /*float: left;*/
+}
+.right{
+    text-align: right;
+}
+/*доработка формы Регистрации-----*/
+.register ul{
+    margin-top: -16px;
+}
+. register li{
+    box-shadow: none;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.registr label{
+    color: teal;
+    font-size: 18px;
+    font-weight: bold;
+}
+.register button{
+    margin-top: 10px;
+}
+/*---------------------------------*/

@@ -4,4 +4,33 @@
 
 <h1>Задачи:</h1>
 
+<ul>
+    {% for todo in todos %}
+    <li>
+        <a href="{% url 'viewtodo' todo.id %}">
+            {% if todo.important %} <!--если задача важная то выделяем жирным шрифтом-->
+            <b>{{ todo.title }}</b>
+            {% else %} <!--иначе, без выделения-->
+            {{ todo.title }}
+            {% endif %}
+
+            {% if todo.memo %}  <!--если описания задачи нет то не выводить описание-->
+            - {{ todo.memo }}  <!--описание задачи-->
+            {% endif %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
