@@ -1,1 +1,2 @@
 D:\Python212\Python\second47\personal_portfolio\skills\templates\skills\base.html
+second47 — копия без регистрации и авторизации
