@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -40,6 +41,7 @@ def signupuser(request):
             # зарегестрироваться то возвращаемся на страницу заполнения формы
 
 
+@login_required  # эта страница не должна показываться незаавторизованным пользователям
 def currenttodos(request):
     return render(request, 'todo/currenttodos.html')
 

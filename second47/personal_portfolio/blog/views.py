@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
+@login_required  # эта страница не должна показываться незаавторизованным пользователям
 def blogs(request):
     # blogs = Blog.objects.all()
     blogs = Blog.objects.order_by('-date')

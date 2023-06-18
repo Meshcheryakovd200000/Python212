@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+
+import developments.views
+import serversets.views
 from skills import views
 
 urlpatterns = [
@@ -25,6 +28,11 @@ urlpatterns = [
     # path('', views.index, name='index'),
     path('blog/', include('blog.urls')),
 
+    # Serversets
+    path('serversets/', serversets.views.serversets, name='serversets'),
+
+    # developments
+    path('developments/', developments.views.developments, name='developments'),
 
     # Auth
     path('signup/', views.signupuser, name='signupuser'),  # первый путь для авторизации
@@ -39,18 +47,3 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL,
                       document_root=settings.MEDIA_ROOT)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
