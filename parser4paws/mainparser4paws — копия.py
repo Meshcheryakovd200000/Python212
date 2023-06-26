@@ -97,13 +97,13 @@ def get_data(html):
 
         vnalich = 'yes'
 
-        available = None
-
-
-
         data = {'id': idgood, 'name': name1, "url": refinedurl(url), "price": price, "brand": brand}
         # print(data)
-        # write_csv(data)
+        write_csv(data)
+
+        # soup = soup.find("div", {"class": "b-container b-container--brand-list"}).findAll("a", {
+        #     "class": "b-popular-brand-item b-popular-brand-item--brands"})
+        # print(soup)
 
 
 def main():
