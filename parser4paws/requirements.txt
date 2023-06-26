@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 import re
 import requests
 from bs4 import BeautifulSoup
 import csv
+=======
+import re
+import requests
+from bs4 import BeautifulSoup
+import csv
+>>>>>>> 8f554ef5 (parse)
