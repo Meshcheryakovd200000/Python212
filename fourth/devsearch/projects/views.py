@@ -14,7 +14,7 @@ def projects(request):
 
 def project(request, pk):
     project_obj = Project.objects.get(id=pk)
-    return render(request, 'projects/single-project.html', {'project': project_obj})
+    return render(request, 'projects/single-repair.html', {'project': project_obj})
 
 
 @login_required(login_url="login")
