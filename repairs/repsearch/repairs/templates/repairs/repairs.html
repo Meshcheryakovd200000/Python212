@@ -28,11 +28,11 @@
         {% for repair in repairs %}
           <div class="column">
             <div class="card project">
-              <a href="{% url 'repair' repair.id %}" class="project">
+
                 <img class="project__thumbnail" src="{{ repair.featured_image.url }}" alt="project thumbnail" />
                 <div class="card__body">
                   <h3 class="project__title">{{ repair.title }}</h3>
-                  <p><a class="project__author" href="{% url 'repair' repair.id %}">By xxxxxxxx</a></p>
+                  <p><a class="project__author" href="">By xxxxxxxx</a></p>
                   <p class="project--rating">
                     <span style="font-weight: bold;">{{ repair.vote_percent }}%</span> Positive
                     Feedback ({{ repair.vote }} Vote{{ repair.vote|pluralize:'s' }})
@@ -55,8 +55,3 @@
 
   </main>
 {% endblock %}
-
-
-
-
-
