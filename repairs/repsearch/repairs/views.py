@@ -12,6 +12,19 @@ def repairs(request):
     return render(request, 'repairs/repairs.html', context)
 
 
+def repair(request, pk):
+    project_obj = Repair.objects.get(id=pk)
+    return render(request, 'repairs/single-repair.html', {'repair': project_obj})
+
+
+
+
+
+
+
+
+
+
 
 
 
