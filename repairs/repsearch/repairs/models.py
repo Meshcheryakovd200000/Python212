@@ -1,10 +1,11 @@
 from django.db import models
-
+from users.models import Profile
 
 # Create your models here.
 
 
 class Repair(models.Model):
+    owner = models.ForeignKey(Profile, on_delete=models.SET_NULL, blank=True, null=True)
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     featured_image = models.ImageField(blank=True, null=True,
