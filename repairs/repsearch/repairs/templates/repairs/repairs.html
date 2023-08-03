@@ -32,7 +32,7 @@
                 <img class="project__thumbnail" src="{{ repair.featured_image.url }}" alt="project thumbnail" />
                 <div class="card__body">
                   <h3 class="project__title">{{ repair.title }}</h3>
-                  <p><a class="project__author" href="{% url 'repair' repair.id %}">By xxxxxxxx</a></p>
+                  <p><a class="project__author" href="{% url 'repair' repair.id %}">By {{repair.owner.name}}</a></p>
                   <p class="project--rating">
                     <span style="font-weight: bold;">{{ repair.vote_percent }}%</span> Positive
                     Feedback ({{ repair.vote }} Vote{{ repair.vote|pluralize:'s' }})
