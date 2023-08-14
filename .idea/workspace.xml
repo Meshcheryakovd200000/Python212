@@ -6,14 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="7c51071b-6b9b-485d-bbda-6ee051a7adc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second47/personal_portfolio/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/second47/personal_portfolio/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third48/todos/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/third48/todos/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
