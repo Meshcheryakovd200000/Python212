@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Repair
 from .forms import RepairForm
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -18,6 +19,7 @@ def repair(request, pk):
     return render(request, 'repairs/single-repair.html', {'repair': project_obj})
 
 
+@login_required(login_url="login")
 def create_repair(request):
     form = RepairForm()  # отрабатывает методом get
 
