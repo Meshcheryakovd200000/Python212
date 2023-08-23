@@ -6,12 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7c51071b-6b9b-485d-bbda-6ee051a7adc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/static/uikit/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/static/uikit/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/login_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/login_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/form-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/form-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/profile_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/profile_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/views.py" afterDir="false" />
     </list>
@@ -39,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Python212/Python/repairs/repsearch/users/templates/users",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python212/Python/repairs/repsearch/users/templates/users&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python212\Python\repairs\repsearch\users\templates\users" />

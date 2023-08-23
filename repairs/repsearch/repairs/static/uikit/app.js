@@ -1,5 +1,14 @@
 let alertWrapper = document.querySelector('.alert');
-let alertClose = document.querySelector('.alert__close');
+let alertClose = document.querySelectorAll('.alert__close');
+
+
+if (alertWrapper) {
+    for(let i=0; i < alertClose.length; i++){
+    alertClose[i].addEventListener('click', function(){
+        this.parentNode.remove();
+    })
+    }
+}
 
 //if (alertWrapper) {
 //  alertClose.addEventListener('click', () =>
@@ -7,9 +16,31 @@ let alertClose = document.querySelector('.alert__close');
 //)}
 
 
-alertClose.forEach(function (item) {
-    item.addEventListener('click', function () {
-        parentModal = this.closest('.alert');
-        parentModal.style.display = 'none';
-    });
-});
+//alertClose.forEach(function (item) {
+//    item.addEventListener('click', function () {
+//        parentModal = this.closest('.alert');
+//        parentModal.style.display = 'none';
+//    });
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

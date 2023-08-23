@@ -47,7 +47,8 @@
                 </div>
                 <div class="settings">
                     <h3 class="settings__title">Skills</h3>
-                    <a class="tag tag--pill tag--sub settings__btn tag--lg" href="#"><i class="im im-plus"></i> Add
+                    <a class="tag tag--pill tag--sub settings__btn tag--lg" href="{% url 'create-skill' %}"><i
+                            class="im im-plus"></i> Add
                         Skill</a>
                 </div>
 
@@ -61,11 +62,10 @@
                             </p>
                         </td>
                         <td class="settings__tableActions">
-                            <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-edit"></i>
-                                Edit</a>
-                            <a class="tag tag--pill tag--main settings__btn" href="#"><i
-                                    class="im im-x-mark-circle-o"></i>
-                                Delete</a>
+                            <a class="tag tag--pill tag--main settings__btn" href="{% url 'update-skill' skill.id %}">
+                                <i class="im im-edit"></i>Edit</a>
+                            <a class="tag tag--pill tag--main settings__btn" href="{% url 'delete-skill' skill.id %}">
+                                <i class="im im-x-mark-circle-o"></i>Delete</a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -73,8 +73,8 @@
 
                 <div class="settings">
                     <h3 class="settings__title">Repairs</h3>
-                    <a class="tag tag--pill tag--sub settings__btn tag--lg" href="#"><i class="im im-plus"></i> Add
-                        Repair</a>
+                    <a class="tag tag--pill tag--sub settings__btn tag--lg" href="{% url 'create-repair' %}">
+                        <i class="im im-plus"></i> Add Repair</a>
                 </div>
 
                 <table class="settings__table">
@@ -82,7 +82,7 @@
                     <tr>
                         <td class="settings__thumbnail">
                             <a href="{% url 'repair' repair.id %}"><img src="{{ repair.featured_image.url }}"
-                                                                          alt="Repair Thumbnail"/></a>
+                                                                        alt="Repair Thumbnail"/></a>
                         </td>
                         <td class="settings__tableInfo">
                             <a href="{% url 'repair' repair.id %}">{{ repair.title }}</a>
@@ -91,11 +91,11 @@
                             </p>
                         </td>
                         <td class="settings__tableActions">
-                            <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-edit"></i>
-                                Edit</a>
-                            <a class="tag tag--pill tag--main settings__btn" href="#"><i
-                                    class="im im-x-mark-circle-o"></i>
-                                Delete</a>
+                            <a class="tag tag--pill tag--main settings__btn" href="{% url 'update-repair' repair.id %}">
+                                <i class="im im-edit"></i>Edit</a>
+                            <a class="tag tag--pill tag--main settings__btn"
+                               href="{% url 'delete-repair' repair.id %}">
+                                <i class="im im-x-mark-circle-o"></i>Delete</a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -106,3 +106,15 @@
 </main>
 
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
