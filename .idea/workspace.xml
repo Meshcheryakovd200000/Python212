@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7c51071b-6b9b-485d-bbda-6ee051a7adc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/static/uikit/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/static/uikit/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/form-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/templates/repairs/form-template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/repairs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/repairs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/profile_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/templates/users/profile_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repairs/repsearch/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/repairs/repsearch/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
