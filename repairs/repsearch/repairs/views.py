@@ -1,15 +1,22 @@
 from django.shortcuts import render, redirect
-from .models import Repair
+from .models import Repair, Tag
 from .forms import RepairForm
 from django.contrib.auth.decorators import login_required
+from .utils import search_repairs, paginate_repairs
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 # Create your views here.
 
 def repairs(request):
-    pr = Repair.objects.all()
+    pr, search_query = search_repairs(request)
+    custom_range, pr = paginate_repairs(request, pr, 3)
+
     context = {
-        'repairs': pr  # придумаем ключ
+        'repairs': pr,  # придумаем ключ
+        'search_query': search_query,
+        # 'paginator': paginator,
+        'custom_range': custom_range,
     }
     return render(request, 'repairs/repairs.html', context)
 
@@ -65,21 +72,3 @@ def delete_repair(request, pk):
 
     context = {'object': repair}
     return render(request, 'repairs/delete.html', context)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

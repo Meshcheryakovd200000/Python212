@@ -1,6 +1,7 @@
 from django.db import models
 from users.models import Profile
 
+
 # Create your models here.
 
 
@@ -21,6 +22,9 @@ class Repair(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        ordering = ['-created']
+
 
 class Tag(models.Model):
     name = models.CharField(max_length=200)
@@ -28,6 +32,12 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+
+
+
 
 
 
