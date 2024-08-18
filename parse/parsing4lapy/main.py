@@ -3,11 +3,9 @@ from cities import cities
 from bs4 import BeautifulSoup
 from json import dumps, loads
 
-
 def getPage(url: str, city: str) -> str:
     response = get(url, cookies=cities[city]['cookies'], headers=cities[city]['headers'])
     return response.text
-
 
 def main() -> None:
     all_stuff = []
@@ -39,7 +37,6 @@ def main() -> None:
             all_stuff += [page_stuff[item] for item in page_stuff]
     with open('result.json', 'w', encoding='utf-8') as f:
         f.write(dumps(all_stuff, ensure_ascii=False))
-
 
 if __name__ == '__main__':
     main()
