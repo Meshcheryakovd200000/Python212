@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
 # Create your models here.
 
 # Профиль мастера
@@ -21,7 +20,6 @@ class Profile(models.Model):
     def __str__(self):
         return self.username
 
-
 # Скилы мастера
 class Skill(models.Model):
     owner = models.ForeignKey(Profile, on_delete=models.CASCADE, blank=True, null=True)
@@ -31,5 +29,3 @@ class Skill(models.Model):
 
     def __str__(self):
         return self.name
-
-
